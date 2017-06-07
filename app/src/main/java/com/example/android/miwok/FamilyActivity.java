@@ -28,16 +28,17 @@ public class FamilyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.words_items);
         ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("one","lutti"));
-        words.add(new Word("two","otiiko"));
-        words.add(new Word("three","tolookosu"));
-        words.add(new Word("four","olisa"));
-        words.add(new Word("five","temokka"));
-        words.add(new Word("six","nicha"));
-        words.add(new Word("seven","tilikotuu"));
-        words.add(new Word("eight","forula"));
-        words.add(new Word("nine","olyyaisa"));
-        words.add(new Word("ten","vilisu"));
+        words.add(new Word("Daughter","lutti",R.drawable.family_daughter));
+        words.add(new Word("Father","otiiko",R.drawable.family_father));
+        words.add(new Word("Grandfather","tolookosu",R.drawable.family_grandfather));
+        words.add(new Word("Grandmother","olisa",R.drawable.family_grandmother));
+        words.add(new Word("Mother","temokka",R.drawable.family_mother));
+        words.add(new Word("Brother","nicha",R.drawable.family_older_brother));
+        words.add(new Word("Sister","tilikotuu",R.drawable.family_older_sister));
+        words.add(new Word("Father","forula",R.drawable.family_father));
+        words.add(new Word("Son","olyyaisa",R.drawable.family_son));
+        words.add(new Word("Young Brother","vilisu",R.drawable.family_younger_brother));
+        words.add(new Word("Young Sister","vilisu",R.drawable.family_younger_sister));
 
         WordAdapter adapter = new WordAdapter(this, words);
 
